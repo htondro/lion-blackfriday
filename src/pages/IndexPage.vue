@@ -117,7 +117,7 @@
                 :class="{ 'q-pa-none': !cat.img, 'q-my-auto': cat.img }"
               >
                 <q-img
-                  :src="'/cats/' + cat.img"
+                  :src="'/bfr/cats/' + cat.img"
                   width="100%"
                   height="auto"
                   style="max-height: 160px"
