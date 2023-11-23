@@ -131,7 +131,7 @@
               class="text-subtitle1 text-center q-pa-none"
             >
               <q-btn
-                class="full-width"
+                class="full-width q-py-md"
                 flat
                 square
                 :size="$q.screen.lt.md ? 'md' : 'xl'"
