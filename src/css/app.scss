@@ -1,0 +1,84 @@
+// app global css in SCSS form
+@font-face {
+  font-family: peyda;
+  src: url(./fonts/PeydaWeb.woff2);
+  font-display: swap;
+}
+body {
+  font-family: 'peyda';
+}
+h1 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+}
+
+.lion-chip {
+  border: 1px solid $primary;
+  padding: 1rem;
+  box-shadow: 0 0 1.5rem $primary;
+  text-shadow: 0 0 1.5rem $primary;
+  font-size: 48px;
+  text-align: center;
+  z-index: 10;
+  margin: 0.5rem 0;
+}
+
+.lion-chip {
+  border-radius: 5rem;
+}
+
+.lion-card {
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(90, 90, 90) 100%
+  );
+  border: 1px solid $primary;
+  box-shadow: 0 0 0.75rem $primary;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.lion-card:hover {
+  box-shadow: 0 0 3rem $primary;
+}
+
+.lion-card:first-child {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media only screen and (max-width: 786px) {
+  h1 {
+    font-size: 48px;
+  }
+  .lion-chip {
+    font-size: 32px;
+    text-shadow: 0 0 1rem $primary;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+  .lion-chip {
+    padding: 0.5rem;
+    font-size: 16px;
+    text-shadow: 0 0 0.5rem $primary;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+}
+a:hover {
+}
