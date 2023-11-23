@@ -93,54 +93,57 @@
             <div class="col-auto">پیشنهادهای ویژه</div>
           </div>
         </div>
-        <div
-          class="col-xs-6 col-sm-3"
-          v-for="(cat, index) in pictures"
-          :key="index"
-        >
-          <q-card
-            class="lion-card position-relative"
-            tag="a"
-            :href="cat.url"
-            target="_blank"
+        <template v-for="(cat, index) in pictures" :key="index">
+          <div
+            :class="{
+              'col-xs-6 col-sm-3': index > 0,
+              'col-xs-12 col-md-6': index == 0,
+            }"
           >
-            <q-card-section
-              :class="{ 'q-pa-none': !cat.img, 'q-my-auto': cat.img }"
+            <q-card
+              class="lion-card position-relative"
+              tag="a"
+              :href="cat.url"
+              target="_blank"
             >
-              <q-img
-                :src="'/cats/' + cat.img"
-                width="100%"
-                height="auto"
-                style="max-height: 160px"
-                fit="contain"
-                no-native-menu
+              <q-card-section
+                :class="{ 'q-pa-none': !cat.img, 'q-my-auto': cat.img }"
+              >
+                <q-img
+                  :src="'/cats/' + cat.img"
+                  width="100%"
+                  height="auto"
+                  style="max-height: 160px"
+                  fit="contain"
+                  no-native-menu
+                  v-if="cat.img"
+                />
+                <q-btn
+                  v-else
+                  class="full-width"
+                  flat
+                  square
+                  :size="$q.screen.lt.md ? 'md' : 'xl'"
+                >
+                  {{ cat.title }}
+                </q-btn>
+              </q-card-section>
+              <q-card-section
                 v-if="cat.img"
-              />
-              <q-btn
-                v-else
-                class="full-width"
-                flat
-                square
-                :size="$q.screen.lt.md ? 'md' : 'xl'"
+                class="text-subtitle1 text-center q-pa-none"
               >
-                {{ cat.title }}
-              </q-btn>
-            </q-card-section>
-            <q-card-section
-              v-if="cat.img"
-              class="text-subtitle1 text-center q-pa-none"
-            >
-              <q-btn
-                class="full-width q-py-md"
-                flat
-                square
-                :size="$q.screen.lt.md ? 'md' : 'xl'"
-              >
-                {{ cat.title }}
-              </q-btn>
-            </q-card-section>
-          </q-card>
-        </div>
+                <q-btn
+                  class="full-width q-py-md"
+                  flat
+                  square
+                  :size="$q.screen.lt.md ? 'md' : 'xl'"
+                >
+                  {{ cat.title }}
+                </q-btn>
+              </q-card-section>
+            </q-card>
+          </div>
+        </template>
       </div>
     </div>
     <div class="col-auto full-width q-mt-xl">
@@ -167,6 +170,11 @@
 
 <script setup lang="ts">
 const pictures = [
+  {
+    url: 'https://pc.lioncomputer.com/',
+    img: 'pc.webp',
+    title: 'اسمبل هوشمند - ایزی پی‌سی',
+  },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=7dy6b',
     img: 'case.webp',
