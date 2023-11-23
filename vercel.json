@@ -1,11 +1,12 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "handle": "filesystem"
+      "source": "/bfr/:asset*",
+      "destination": "https://lion-blackfriday.vercel.app/:asset*"
     },
     {
-      "src": "/bfr/.*",
-      "dest": "/"
+      "source": "/(.*)",
+      "destination": "/"
     }
   ]
 }
