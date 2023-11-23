@@ -264,64 +264,64 @@ const pictures = [
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=bknqb',
-    img: '',
+    img: 'keyboard-mouse.webp',
     title: 'کیبورد و ماوس (کمبو)',
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=b17kb',
-    img: '',
+    img: 'mousepad.webp',
     title: 'ماوس پد',
   },
 
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=ep575',
-    img: '',
+    img: 'coolpad.webp',
     title: 'کول‌پد',
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=ex8qd',
-    img: '',
+    img: 'usb.webp',
     title: 'فلش مموری',
   },
 
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=dz51d',
-    img: '',
+    img: 'router.webp',
     title: 'روتر و اکسس‌پوینت',
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=dk26x',
-    img: '',
+    img: 'modem.webp',
     title: 'مودم همراه',
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=e2y9d',
-    img: '',
+    img: 'sdcard.webp',
     title: 'کارت حافظه',
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=d88xd',
-    img: '',
+    img: 'webcam.webp',
     title: 'وب‌کم',
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=eqxg2',
-    img: '',
+    img: 'ledstrip.webp',
     title: 'نوار LED',
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=d571p',
-    img: '',
+    img: 'cable-sleeve.webp',
     title: 'کابل اسلیو',
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=bn5np',
-    img: '',
+    img: 'gpu-bracket.webp',
     title: 'براکت کارت گرافیک',
   },
   {
     url: 'https://www.lioncomputer.com/shop/products/offers?category=eyw5b',
-    img: '',
+    img: 'switch.webp',
     title: 'سوئیچ شبکه',
   },
 ];

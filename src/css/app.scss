@@ -55,6 +55,11 @@ h1 {
   align-items: stretch;
 }
 
+a {
+  text-decoration: none;
+  color: $primary;
+}
+
 @media only screen and (max-width: 786px) {
   h1 {
     font-size: 48px;
@@ -74,11 +79,4 @@ h1 {
     font-size: 16px;
     text-shadow: 0 0 0.5rem $primary;
   }
-}
-
-a {
-  text-decoration: none;
-  color: $primary;
-}
-a:hover {
 }
