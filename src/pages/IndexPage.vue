@@ -13,12 +13,19 @@
         width="100%"
         style="max-width: 1000px; margin: auto"
         no-native-menu
+        no-spinner
+        no-transition
+        loading="eager"
       />
       <q-img
         src="~assets/percentage-x500.webp"
         class="lt-md"
         width="100%"
         style="max-width: 500px; margin: auto"
+        no-native-menu
+        no-spinner
+        no-transition
+        loading="eager"
       />
     </div>
     <div class="lion-chip">تخفیف‌های جذاب لیون‌کامپیوتر رو از دست نده...!</div>
