@@ -128,3 +128,5 @@ dist
 
 .vscode
 .quasar
+.quasar/client-entry.js
+.quasar/app.js
